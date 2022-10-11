@@ -1,0 +1,84 @@
+Style.css body {
+    box-sizing: content-box;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    position: relative;
+}
+
+.logo_ohmyfood {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Location__section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #eaeaea;
+}
+
+.reservation {
+    padding: 2rem 5vw 3rem 5vw;
+    width: 90vw;
+    background: #f6f6f6;
+}
+
+h1 {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+.Explorer_nos_restaurants {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    font-size: 1.125rem;
+    font-weight: 500;
+    color: #fff;
+    background: linear-gradient(#FF79DA, #9356DC);
+    border: none;
+    border-radius: 100px;
+}
+
+.Type_restaurant {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.Photo_menu {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 5% 5% 0% 0%;
+}
+
+.Type_restaurant {
+    font-size: smaller;
+}
+
+.fa-regular fa-heart {
+    display: flex;
+    direction: end;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: black;
+}
