@@ -120,11 +120,7 @@ nav{
     font-family: 'Roboto', sans-serif;
 }
 /*--Carte-restaurant*/
-.Restaurant{
-    margin: 1%;
-    width: 100%;
-    padding: 1%;
-}
+
 #Titre_Restaurant{
     font-family: 'shrikand',sans-serif;
     font-weight: bolder;
