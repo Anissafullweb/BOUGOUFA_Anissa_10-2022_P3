@@ -126,11 +126,16 @@ nav{
     font-weight: bolder;
     font-size: x-large;
     margin: 0%;
+    padding-left: 2%;
 }
 .Restaurant__Dekstop-smartphone{
     display: flex;
     flex-direction: row;
     margin: 0%;
+}
+.Restautant{
+    padding-top: 0%;
+    padding-left: 0%;
 }
 .Restaurant__card{
     width: auto;
