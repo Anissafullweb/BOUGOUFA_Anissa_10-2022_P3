@@ -17,7 +17,14 @@
     <!--Polices-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family= Roboto +Condensed:wght@300 & display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+
+    
     <!--Logo-->
     <script src="https://kit.fontawesome.com/eef49884a3.js" crossorigin="anonymous"></script>
     <title>ohmyfood</title>
@@ -25,10 +32,10 @@
 
 <body>
     <header>
-        <img class="header__logo_ohmyfood" src="images\ohmyfood@2x.svg" alt="logo_ohmyfood"/>
+        <img class="header__logo_ohmyfood"src="images\ohmyfood@2x.svg" alt="logo_ohmyfood"/>
         <!--Location-->
         <div class="header__Location__section">
-            <p><i class="fa-solid fa-location-dot" href="#"></i>  Paris, Belleville </p>
+            <p><i class="fa-solid fa-location-dot"href="#"></i>Paris, Belleville </p>
         </div>
     </header>
     <main>
@@ -42,7 +49,7 @@
         <!--Corps de page-->
         <!--Haut-de page-pour-la version bureau et tablette div dekstop et tablette-->
         <div class="Fonctionnement">
-        <p class="Fonctionnement__Titre">Fonctionnement</p>
+        <h2 class="Fonctionnement__Titre">Fonctionnement</h2>
         <nav>
             
             <a class="fonction__btn" href="#"><p class="fonction__btn--Number">1</p><i class="fa-solid fa-mobile-screen-button"></i><p class="fonction__btn--tex">Choissiez un restaurant</p></a>
@@ -53,7 +60,7 @@
 </div>
         <section class="Restaurant">
             <H1 id="Titre_Restaurant">Restaurants</H1>
-            <div class="Dekstop_smartphone">
+            <div class="Restaurant__Dekstop-smartphone">
             <a class="Link__card"href="Menu_La_palette_du_goût.html">
                 <div class="Restaurant__card">
                     <div class="Restaurant__card--image">
@@ -64,7 +71,7 @@
                     <div class="Restaurant__info">
                         <div class="Restaurant__info--texte">
                 <h3>La palette du goût</h3>
-                <P>Ménilmontant</P></div>
+                <P class="Restaurant__card--Ville">Ménilmontant</P></div>
                 <div class="Restaurant__info--heart">
                 <i class="fa-regular fa-heart Restaurant__info--heart-white">
                 </i>
@@ -85,7 +92,7 @@
                     <div class="Restaurant__info">
                         <div class="Restaurant__info--texte">
                 <h3> La note enchantée</h3>
-                <P> Charonne</P></div>
+                <P class="Restaurant__card--Ville"> Charonne</P></div>
                 <div class="Restaurant__info--heart">
                 <i class="fa-regular fa-heart Restaurant__info--heart-white">
                 </i>
@@ -105,16 +112,17 @@
                     <div class="Restaurant__info">
                         <div class="Restaurant__info--texte">
                 <h3> A la française</h3>
-                <P>Cité rouge</P></div>
+                <P class="Restaurant__card--Ville">Cité rouge</P></div>
                 <div class="Restaurant__info--heart">
                 <i class="fa-regular fa-heart Restaurant__info--heart-white">
                 </i>
                 <i class="fa-regular fa-heart Restaurant__info--heart-white"></i>
-            </a>
+           
             </div>
                     </div>
                 </div>
             </div>
+        </a>
             <!--Fin troisième carte-->
             <!--Quatrième carte-->
             <a class="Link__card"href="Menu_Le_délice_du_sens.html">
@@ -126,7 +134,7 @@
                     <div class="Restaurant__info">
                         <div class="Restaurant__info--texte">
                 <h3> Le délice du sens</h3>
-                <P> Folie-Méricourt</P></div>
+                <P class="Restaurant__card--Ville"> Folie-Méricourt</P></div>
                 <div class="Restaurant__info--heart">
                 <i class="fa-regular fa-heart Restaurant__info--heart-white">
                 </i>
@@ -134,9 +142,12 @@
                 </div>
                     </div>
                 </div>
-            </a>
-            <!--Fin Quatrième carte-->
+            
+           
         </div>
+    </div>
+</a>
+ <!--Fin Quatrième carte-->
         </section>
     </main>
     <!--Bas de page-->
