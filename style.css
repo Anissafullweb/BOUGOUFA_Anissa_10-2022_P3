@@ -99,7 +99,9 @@ text-align: center;
     position: relative;
     height: 80px;
     margin-left:5%;}
-
+    .fonction__btn:hover{
+        background-color: #f854eb;
+    }
 .fonction__btn--Number{
 display: flex;
 align-items: center;

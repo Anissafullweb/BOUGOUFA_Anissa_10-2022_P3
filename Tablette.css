@@ -96,25 +96,7 @@
             margin: 0%;
             padding: 0%;
         }
-        .fonctio__btn{
-            display: flex;
-            justify-content: flex-start;
-            align-items: center;
-            text-decoration: none;
-            width: 50em;
-            border: 0px solid;
-            border-radius: 15px;
-            box-shadow: 3px 3px 10px rgb(219, 217, 217);
-            background-color: rgb(245, 241, 241);
-            color: #000;
-            min-width: 300px;
-            height: auto;
-            margin: auto;
-            margin-bottom: 20px;
-            padding-right: 20%;
-            padding-left: 10%;
-            position: relative;
-        }
+       
         .fonction__btn--tex{
             font-size: x-large;
             padding: 1%;
@@ -127,11 +109,17 @@
             font-weight: bolder;
             font-size: x-large;
             margin: 0%;
+            padding-left: 2%;
         }
         .Restaurant__Dekstop-smartphone{
             display: flex;
             flex-direction: row;
             margin: 0%;
+            padding: 0%;
+        }
+        .Restautant{
+            padding-top: 0%;
+            padding-left: 0%;
         }
         .Restaurant__card{
             width: auto;
