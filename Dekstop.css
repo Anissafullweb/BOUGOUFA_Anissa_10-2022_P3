@@ -17,8 +17,8 @@ align-items: center;
 margin: 0;
 height: 40px;
 box-shadow: inset 0px 2px 4px rgb(183, 181, 181);
-font-size: 40px;
-font-weight: 900 bold;
+font-size: 20px;
+font-weight: bold;
 padding: 1%;
 font-family: 'Roboto', sans-serif;
 }
@@ -44,7 +44,7 @@ background-color: white;
 font-family: 'Roboto', sans-serif;
 margin: 0%;
 padding: 0%;
-font-size: 30px;
+font-size: 20px;
 }
 h1{
     font-size: 30px;
@@ -66,7 +66,8 @@ display: flex;
 align-items: center;
 justify-content: center;
 height: 65px;
-font-size: xx-large;
+font-size: 20px;
+margin-bottom: 3%;
 
 }
 .Fonctionnement{
@@ -79,23 +80,14 @@ width: 50%;
 .Fonctionnement__Titre{
 
     background-color: white;
-    margin-top: 1%s;
+    margin-top: 1%;
 }
 nav{
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-
 }
-nav{
-    display: flex;
-    justify-content: flex-start;
-    width: 100%;
-    margin: 0%;
-    padding: 0%;
-}
-
 .fonction__btn--tex{
     font-size: x-large;
     padding: 1%;
