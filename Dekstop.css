@@ -10,6 +10,7 @@ background-color: white;
 padding: 2%;
 width: 30%;
 }
+
 .header__Location__section{
 display: flex;
 justify-content: center;
@@ -25,7 +26,6 @@ font-family: 'Roboto', sans-serif;
 .Dekstop_Tablette{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
 }
 .fa{
 display: flex;
@@ -44,7 +44,7 @@ p{
 .header__Location__ville{
     font-size: 20px;
     align-items: center;
-    margin-left: 30%;
+    margin-left: 0%;
 }
 
 .reservation{
@@ -125,16 +125,14 @@ nav{
 .Restaurant__Dekstop-Tablette{
     display: flex;
     flex-direction: row;
-justify-content: space-between;
-   width: auto;
+    justify-content: center;
    padding: 0%;
    margin: 0%;
 }
 
 .Link__card{
     padding: 0%;
-    margin:2%;
-    width: 10%;
+    margin:4%;
 }
 .Restaurant__card{
    
