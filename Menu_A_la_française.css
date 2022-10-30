@@ -3,30 +3,31 @@
     font-family: 'Roboto', sans-serif;
 }
 .header__arrow{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin: 4%;
-padding: 4%;
+display: flex;
+flex-direction: row;
+align-items: center;
 font-weight: bold;
+margin-left: 3%;
 }
 .header__logo_ohmyfood{
-    padding-left: 15%;
+    padding-left: 10%;
 }
 .header__photo{
     object-fit:cover;
-    width: 100%;
     height: 200PX;
+    width: 375px;
 }
-h1{
+.header__Titre{
     display: flex;
     justify-content: space-between;
     font-family: 'Shrikhand', cursive;
     border-radius: 20px 20px 0px 0px;
-    padding: 5%;
+    padding-left: 5%;
     padding-top: 0%;
     margin-top: -20px;
     align-items: center;
+    font-size: 20px;
+    width: 95%;
 }
 main{
 border-radius: 20px 20px 0px 0px;
@@ -35,33 +36,48 @@ margin-top: -20px;
 padding-bottom: 40px;
 position: relative;
 height: auto;
+width: auto;
 }
-.Entrée__Titre{
+.Menu__Titre{
 padding-bottom: 0px;
 font-size: 20px;
 margin: 0px 0px 2px 0px;
-padding-left: 10px;
+padding-left: 5px;
 font-weight: 400;
 }
-.Entrée__Titre-underline{
+.Menu__Titre-underline{
 width: 10%;
 height: 2px;
 border: 2px solid #99E2D0;
 margin: 0px 0px 15px 10px;   
 }
-.Entrée{
-    border-radius: 20%;
+.Menu{
+    border-radius: 25px;
     background-color: white;
     margin: 5%;
+    height: 75px;
 
 }
-.Entrée__choix{
-    padding: 10px;
+.Menu__choix{
+    padding-top: 10px;
+    padding-left: 10px;
+    font-weight: bold;
+    font-size: large;
 }
-.Entrée__Accompagnement-prix{
+.Menu__Accompagnement-prix{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    padding: 0%;
+    padding-left: 10px;
+    height: 5px;
+}
+.Menu__prix{
+    font-weight: bold;
+    font-size: large;
+    padding-right: 10px;
+    display: flex;
+    align-items: flex-end;
 }
 
 
