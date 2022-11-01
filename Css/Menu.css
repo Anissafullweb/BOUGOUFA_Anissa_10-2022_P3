@@ -19,7 +19,7 @@ margin-left: 3%;
 .header__photo{
     object-fit:cover;
     height: 200PX;
-    width: 375px;
+    width:100%;
 }
 .header__Titre{
     display: flex;
@@ -43,7 +43,7 @@ height: auto;
 width: auto;
 }
 .Menu__Titre{
-padding-bottom: 0px;
+padding-bottom: 0px;WI
 font-size: 10px;
 margin: 0px 0px 2px 0px;
 padding-left: 5px;
@@ -51,36 +51,45 @@ font-weight: 400;
 }
 .Menu__Titre-underline{
 width: 10%;
-height: 2px;
 border: 2px solid #99E2D0;
-margin: 0px 0px 15px 10px;   
+margin: 0px 0px 15px 10px; 
+height: 2px;  
 }
 .Menu{
     border-radius: 25px;
     background-color: white;
     margin: 3%;
     height: 60px;
-    width: 300px;
+    width: 90%;
 }
-.Menu__choix{
+.Menu__Accompagnement-prix{
+    display: flex;
+    flex-direction: column;
+    padding: 0%;
+    padding-left: 10px;
+    height: 15px;
+    font-size: 10px;
+    width: 40%;
+    padding-right: 10px;
+}
+.Menu__choix {
     padding-top: 10px;
     padding-left: 10px;
     font-weight: bold;
     font-size: 10px;
     margin: 0%;
 }
-.Menu__Accompagnement-prix{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 0%;
+p{
+    padding-top: 10px;
     padding-left: 10px;
-    height: 15px;
     font-size: 10px;
-    width: 300PX;
-    padding-right: 10px;
+    margin: 0%;
 }
 .Menu__prix{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
     font-weight: bold;
     font-size: large;
     padding-right: 20px;
