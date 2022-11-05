@@ -1,0 +1,168 @@
+@media screen and (min-width: 993px){
+
+header{
+text-align: center;
+height: auto;
+background-color: white
+}
+.header__logo_ohmyfood{
+background-color: white;
+padding: 2%;
+width: 30%;
+}
+
+.header__Location__section{
+display: flex;
+justify-content: center;
+align-items: center;
+margin: 0;
+height: 60px;
+box-shadow: inset 0px 2px 4px rgb(183, 181, 181);
+font-size: 50px;
+font-weight: bold;
+padding: 0%;
+font-family: 'Roboto', sans-serif;
+}
+.Dekstop_Tablette{
+    display: flex;
+    flex-direction: row;
+}
+.fa{
+display: flex;
+justify-content: center;
+align-items: center;
+margin: 0;
+height: 40px;
+padding-right: 5px;
+}
+p{
+    font-size: auto;
+    padding: 0%;
+    margin: 0%;
+    font-weight: lighter;
+}
+.header__Location__ville{
+    font-size: 20px;
+    align-items: center;
+    margin-left: 0%;
+}
+
+.reservation{
+width: 50%;
+background-color: white;
+font-family: 'Roboto', sans-serif;
+margin: 0%;
+padding: 0%;
+font-size: 15px;
+}
+h1{
+    font-size: 20px;
+}
+.Introduction{
+margin-top: 5px;
+text-align: center;
+font-size: 20px;
+}
+.Explorer_nos_restaurants{
+border-radius: 25px;
+background: linear-gradient(#FF79DA, #9356DC);
+color: rgb(255, 255, 255);
+text-decoration: none;
+box-shadow: 0px 2px 10px rgb(133, 132, 132);
+padding: 5%;
+width: 40%;
+margin: auto;
+display: flex;
+align-items: center;
+justify-content: center;
+height: 45px;
+font-size: 20px;
+margin: 3%;
+
+}
+.Fonctionnement{
+margin: 2%;
+padding: 0%;
+list-style: none;
+background-color: white;
+}
+.Fonctionnement__Titre{
+
+    background-color: white;
+    margin-top: 1%;
+    font-size: 20px;
+    font-style:'Roboto' sans-serif;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.fonction__btn--tex{
+    font-weight: lighter;
+    padding-left: 5%;
+    padding-bottom: 0%;
+    font-family: 'Roboto', sans-serif;
+}
+/*--Carte-restaurant*/
+.Restaurant{
+    padding: 0%;
+    margin: 0%;
+    
+}
+
+#Titre_Restaurant{
+    font-family: 'shrikand',sans-serif;
+    font-weight: bolder;
+    font-size: x-large;
+    margin: 0%;
+    padding-left: 2%;
+    padding-bottom: 2%;
+    padding-top: 1%;
+}
+.Restaurant__Dekstop-Tablette{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+   padding: 0%;
+   margin: 0%;
+}
+
+.Link__card{
+    padding: 0%;
+    margin:4%;
+}
+.Restaurant__card{
+   
+    margin: 1%;
+    width:200px;
+}
+.Restaurant__card--image{
+    width: auto;
+}
+
+
+/*--Pied de page--*/
+footer{
+    padding: 0%;
+    padding-bottom: 1%;
+}
+.Footer__Title{
+    display: flex;
+    justify-content: center;
+    font-family: 'Shrikhand', cursive;
+    font-size: 40px;
+    margin: 0%;
+}
+.Footer__list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width:auto;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+}
+}

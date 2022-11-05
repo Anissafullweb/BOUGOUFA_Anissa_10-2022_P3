@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <!-- l'encodage indique la façon dont le fichier est enregistré et détermine comment les caractères spéciaux vont s'afficher  -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Balise view-port permet de créer un début de site responsive s'adapte à la taille de l'écran portable tablette-->
+
+
+    <link rel="stylesheet" type="text/css" href="Dossier CSS\normalize.css">
+    <!--Pour éviter d’avoir un style imposé par le navigateur Normalize.css-->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" media="screen and (min-width: 993px)" href="Dossier CSS\Dekstop.css">
+    <link rel="stylesheet" media="screen and (min-width: 769px) and (max-width: 992px)" href="Dossier CSS\Menu-Tablette .css">
+
+    <!--Polices-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+
+
+    <!--Logo-->
+    <script src="https://kit.fontawesome.com/eef49884a3.js" crossorigin="anonymous"></script>
+    <title>ohmyfood</title>
+</head>
+<!--Animation-accueil-->
+<div class="loader__Animation">
+    <div class="Primaire"></div>
+    <div class="Secondaire"></div>
+    <div class="Tertiaire"></div>
+</div>
+<!--Animation-accueil-->
+
+<body>
+    <header>
+        <img class="header__logo_ohmyfood" src="Image\ohmyfood@2x.svg" alt="logo_ohmyfood" />
+        <!--Location-->
+        <div class="header__Location__section">
+            <p class="header__Location__ville"> <i class="fa-solid fa-location-dot"></i>Paris, Belleville </p>
+        </div>
+    </header>
+    <main>
+        <div class="Dekstop_Tablette">
+            <section class="reservation">
+                <h1>Réserver le menu qui vous convient</h1>
+                <p class="Introduction"> Découvrez des restaurants d'exception séléctionnés par nos soins</p>
+                <button class="Explorer_nos_restaurants">Explorer nos restaurants</button>
+            </section>
+            <!--Compris entre le header et le footer-->
+            <!--Corps de page-->
+            <!--Haut-de page-pour-la version bureau et tablette div dekstop et tablette-->
+            <div class="Fonctionnement">
+                <h2 class="Fonctionnement__Titre">Fonctionnement</h2>
+                <nav>
+
+                    <a class="fonction__btn" href="#">
+                        <p class="fonction__btn--Number">1</p><i class="fa-solid fa-mobile-screen-button"></i>
+                        <p class="fonction__btn--tex">Choissiez un restaurant</p>
+                    </a>
+                    <a class="fonction__btn" href="#">
+                        <p class="fonction__btn--Number">2</p><i class="fa-solid fa-list-ul"></i>
+                        <p class="fonction__btn--tex">Composez votre menu</p>
+                    </a>
+                    <a class="fonction__btn" href="#">
+                        <p class="fonction__btn--Number">3</p><i class="fa-sharp fa-solid fa-store"></i>
+                        <p class="fonction__btn--tex">Déguster au restaurant</p>
+                    </a>
+                </nav>
+            </div>
+        </div>
+        <section class="Restaurant">
+            <H1 id="Titre_Restaurant">Restaurants</H1>
+            <div class="Restaurant__Dekstop-Tablette">
+                <a class="Link__card" href="Dossier HTML\Menu_La_palette_du_goût.html">
+                    <div class="Restaurant__card">
+                        <div class="Restaurant__card--image">
+                            <img class="Restaurant__card--image-photo" src="Image\La_palette_du_gout.jpg"
+                                alt="La_palette du gout">
+                            <p class="Restaurant__card--image-new">Nouveau</p>
+                        </div>
+                        <div class="Restaurant__info">
+                            <div class="Restaurant__info--texte">
+                                <h3>La palette du goût</h3>
+                                <P class="Restaurant__card--Ville">Ménilmontant</P>
+                            </div>
+                            <div class="Restaurant__info--heart">
+                                <i class="fa-regular fa-heart Restaurant__info--heart-white"></i>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <!--Fin première carte-->
+                <!--Deuxieme carte-->
+                <a class="Link__card" href="Dossier HTML\Menu_La_enchantée.html">
+                    <div class="Restaurant__card">
+                        <div class="Restaurant__card--image">
+                            <img class="Restaurant__card--image-photo" src="Image\La_note_enchantée.jpg"
+                                alt="La_note_enchantée">
+                            <p class="Restaurant__card--image-new">Nouveau</p>
+                        </div>
+                        <div class="Restaurant__info">
+                            <div class="Restaurant__info--texte">
+                                <h3> La note enchantée</h3>
+                                <P class="Restaurant__card--Ville"> Charonne</P>
+                            </div>
+                            <div class="Restaurant__info--heart">
+                                <i class="fa-regular fa-heart Restaurant__info--heart-white">
+                                </i>
+                                <i class="fa-regular fa-heart Restaurant__info--heart-white"></i>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <!--Fin deuxieme carte-->
+                <!--Troisième carte-->
+                <a class="Link__card" href="Dossier HTML\Menu_A_la_française.html">
+                    <div class="Restaurant__card">
+                        <div class="Restaurant__card--image"> <img class="Restaurant__card--image-photo"
+                                src="Image\A_la_française.jpg" alt="A_la_française">
+                            <div class="Restaurant__info">
+                                <div class="Restaurant__info--texte">
+                                    <h3> A la française</h3>
+                                    <P class="Restaurant__card--Ville">Cité rouge</P>
+                                </div>
+                                <div class="Restaurant__info--heart">
+                                    <i class="fa-regular fa-heart Restaurant__info--heart-white">
+                                    </i>
+                                    <i class="fa-regular fa-heart Restaurant__info--heart-white"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <!--Fin troisième carte-->
+                <!--Quatrième carte-->
+                <a class="Link__card" href="Dossier HTML\Menu_Le_délice_du_sens.html">
+                    <div class="Restaurant__card">
+                        <div class="Restaurant__card--image">
+                            <img class="Restaurant__card--image-photo" src="Image\Le_delice_du_sens.jpg"
+                                alt="Le_délice_du_sens">
+                            <div class="Restaurant__info">
+                                <div class="Restaurant__info--texte">
+                                    <h3> Le délice du sens</h3>
+                                    <P class="Restaurant__card--Ville"> Folie-Méricourt</P>
+                                </div>
+                                <div class="Restaurant__info--heart">
+                                    <i class="fa-regular fa-heart Restaurant__info--heart-white">
+                                    </i>
+                                    <i class="fa-regular fa-heart Restaurant__info--heart-white"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!--Fin Quatrième carte-->
+        </section>
+    </main>
+    <!--Bas de page-->
+    <footer>
+        <h2 class="Footer__Title">ohmyfood</h2>
+        <ul class="Footer__list">
+            <li>
+                <a class="Footer__list--link" href="#"><i class="fa-solid fa-utensils"></i> Proposer un restaurant</a>
+            </li>
+            <li><a class="Footer__list--link" href="#"><i class="fa-regular fa-handshake"></i> Devenir partenaire</a>
+            </li>
+            <li><a class="Footer__list--link" href="#">Mentions légales</a>
+            </li>
+            <li><a class="Footer__list--link" href="mailto:ohmyfood@gmail.com">Contact</a></li>
+        </ul>
+
+    </footer>
+</body>
+
+</html>
