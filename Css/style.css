@@ -27,6 +27,7 @@ header {
     padding: 5%;
 }
 
+
 title {
     font-family: 'Shrikhand', cursive;
 }
@@ -196,6 +197,9 @@ h1 {
 
 /*--Logo nouveau--*/
 .Restaurant__card--image-new {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border: 1px solid;
     border-radius: 4px;
     background-color: #99E2D0;
