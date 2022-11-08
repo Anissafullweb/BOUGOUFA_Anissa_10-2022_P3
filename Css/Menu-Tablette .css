@@ -1,18 +1,33 @@
 @media screen and (min-width: 769px) and (max-width: 992px) {
-    .Restaurant {
-        width: auto;
-    }
 
-    /*header {
+    header {
         text-align: center;
         height: auto;
-        background-color: white
+        background: linear-gradient(rgb(82, 81, 81), black);
     }
 
     .header__logo_ohmyfood {
         background-color: white;
         padding: 2%;
-        width: 30%;
+        width: auto;
+        margin-left: 35%;
+        margin-bottom: 4%;
+        background: linear-gradient(#FF79DA, #9356DC);
+        border-radius: 25px;
+    }
+
+    .header__logo_ohmyfood:hover {
+        transform: scale(120%);
+        background-color: rgb(84, 83, 83);
+        transition-duration: 3s;
+        transition-property: all;
+        transition-timing-function: ease-out;
+    }
+
+    .fa-arrow-left {
+        background: linear-gradient(#FF79DA, #9356DC);
+        border-radius: 25px;
+        padding: 2%;
     }
 
     .header__Location__section {
@@ -26,6 +41,10 @@
         font-weight: bold;
         padding: 0%;
         font-family: 'Roboto', sans-serif;
+    }
+
+    .header__photo {
+        height: 400px;
     }
 
     .fa {
@@ -51,8 +70,6 @@
     }
 
     .reservation {
-        display: flex;
-        justify-content: center;
         width: 50%;
         background-color: white;
         font-family: 'Roboto', sans-serif;
@@ -135,17 +152,43 @@
         padding-top: 1%;
     }
 
-    .Dekstop_Tablette {
-        display: flex;
-        justify-content: center;
-    }
-
-    .Restaurant__Dekstop-Tablette {
+    .Dekstop-Tablette {
         display: flex;
         flex-direction: row;
         justify-content: center;
         padding: 0%;
         margin: 0%;
+        animation-name: apparition 2s;
+
+    }
+
+    @keyframes apparition {
+        10% {
+            opacity: 0%;
+        }
+
+        30% {
+            opacity: 30%;
+        }
+
+        60% {
+            opacity: 60%;
+        }
+
+        100% {
+            opacity: 100%;
+        }
+    }
+
+    .menu {
+        box-shadow: #9356DC;
+        display: flex;
+        flex-direction: row;
+        border-radius: 25px;
+        background-color: white;
+        margin: 3%;
+        height: 60px;
+        width: 90%;
     }
 
     .Link__card {
@@ -161,6 +204,45 @@
 
     .Restaurant__card--image {
         width: auto;
+    }
+
+    .Menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .Menu__Titre {
+        font-size: 30PX;
+    }
+
+    .Menu__Accompagnement-prix {
+        width: auto;
+    }
+
+    .Menu__choix {
+        font-size: 15PX;
+        width: auto;
+    }
+
+    P {
+        font-size: 15px;
+    }
+
+    .Entrée {
+        width: 25%;
+        margin-right: 5%;
+    }
+
+    .Plats {
+        width: 25%;
+        margin-right: 5%;
+    }
+
+    .Dessert {
+        width: 25%;
+        margin-right: 5%;
     }
 
     /*--Pied de page--*/

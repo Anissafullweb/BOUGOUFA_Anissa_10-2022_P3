@@ -1,34 +1,38 @@
-
-*{
+* {
     box-sizing: content-box;
     font-family: 'Roboto', sans-serif;
-    }
+    font-size: 20px;
+}
 
-body{
+body {
     display: flex;
     justify-content: center;
     flex-direction: column;
 }
-.header__arrow{
-display: flex;
-flex-direction: row;
-align-items: center;
-font-weight: bold;
-margin-left: 3%;
+
+.header__arrow {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-weight: bold;
+    margin-left: 3%;
 }
-.header__logo_ohmyfood{
-    padding-left: 23%;
+
+.header__logo_ohmyfood {
+    padding-left: 19%;
     height: 30px;
     display: flex;
     justify-content: center;
     margin: 3%;
 }
-.header__photo{
-    object-fit:cover;
+
+.header__photo {
+    object-fit: cover;
     height: 200PX;
-    width:100%;
+    width: 100%;
 }
-.header__Titre{
+
+.header__Titre {
     display: flex;
     justify-content: space-between;
     font-family: 'Shrikhand', cursive;
@@ -39,59 +43,69 @@ margin-left: 3%;
     font-size: 30px;
     width: 95%;
 }
-main{
-border-radius: 20px 20px 0px 0px;
-background-color: rgb(244, 242, 242);
-margin-top: -20px;
-padding-bottom: 40px;
-position: relative;
-height: auto;
-width: auto;
+
+.fa-heart {
+    padding-right: 5%;
 }
-.Menu__Titre{
-padding-bottom: 0px;
-font-size: 10px;
-margin: 0px 0px 2px 0px;
-padding-left: 5px;
-font-weight: 400;
+
+main {
+    border-radius: 20px 20px 0px 0px;
+    background-color: rgb(244, 242, 242);
+    margin-top: -20px;
+    padding-bottom: 40px;
+    position: relative;
+    height: auto;
+    width: auto;
 }
-.Menu__Titre-underline{
-width: 10%;
-border: 2px solid #99E2D0;
-margin: 0px 0px 15px 10px; 
-height: 2px;  
+
+.Menu__Titre {
+    padding-bottom: 0px;
+    font-size: 10px;
+    margin: 0px 0px 2px 0px;
+    padding-left: 5px;
+    font-weight: 400;
+    text-decoration: underline #99E2D0;
 }
-.Menu{
+
+.Menu {
+    display: flex;
+    flex-direction: row;
     border-radius: 25px;
     background-color: white;
     margin: 3%;
     height: 60px;
     width: 90%;
+    box-shadow: #9356DC;
 }
-.Menu__Accompagnement-prix{
+
+.Menu__Accompagnement-prix {
     display: flex;
     flex-direction: column;
     padding: 0%;
     padding-left: 10px;
-    height: 15px;
+    height: 100%;
     font-size: 10px;
-    width: 40%;
+    width: 70%;
     padding-right: 10px;
 }
+
 .Menu__choix {
     padding-top: 10px;
     padding-left: 10px;
     font-weight: bold;
     font-size: 10px;
     margin: 0%;
+    width: 80%;
 }
-p{
+
+p {
     padding-top: 10px;
     padding-left: 10px;
     font-size: 10px;
     margin: 0%;
 }
-.Menu__prix{
+
+.Menu__prix {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
@@ -103,12 +117,39 @@ p{
     align-items: center;
     font-size: 10px;
 }
+
+.Animation {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    margin-right: 0%;
+    width: 30%;
+    height: auto;
+}
+
+.fa-circle-check {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    color: #fff;
+    background: #99e2d0;
+    height: auto;
+    border-radius: 0 20PX 20PX 0;
+    padding: 12.8%;
+    margin-top: 0%;
+}
+
 /*--Commander--*/
-section{
+section {
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
+
+
 .Commander {
     display: flex;
     align-items: center;
@@ -122,6 +163,7 @@ section{
     border-radius: 100px;
     margin: 5%;
 }
+
 /*--Footer*/
 footer {
     background-color: rgb(61, 59, 59);
@@ -129,22 +171,22 @@ footer {
     padding: 2%;
     margin-bottom: 0%;
 }
-.Footer__Title
-{
+
+.Footer__Title {
     font-family: "shrikhand";
     font-size: 20px;
     font-weight: 400;
 }
-.Footer__list{
+
+.Footer__list {
     list-style-type: none;
-line-height: 18px;
-font-size: 10px;
-padding: 0;
+    line-height: 18px;
+    font-size: 10px;
+    padding: 0;
 }
-.Footer__list--link{
+
+.Footer__list--link {
     Text-decoration: none;
-color: white;
-line-height: 20px;
+    color: white;
+    line-height: 20px;
 }
-
-
