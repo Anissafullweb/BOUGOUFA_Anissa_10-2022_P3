@@ -52,6 +52,11 @@
         margin-left: 0%;
     }
 
+    .fa-location-dot {
+        margin: 1%;
+        padding: 0%;
+    }
+
     .reservation {
 
         background-color: white;
