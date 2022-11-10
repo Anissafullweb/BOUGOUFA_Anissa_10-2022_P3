@@ -1,8 +1,4 @@
 @media screen and (min-width: 769px) and (max-width: 992px) {
-    .Restaurant {
-        background: linear-gradient(70deg, #9356DC, #FF79DA);
-    }
-
     .header__Location__ville {
         height: 60px;
     }
