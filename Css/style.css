@@ -249,6 +249,20 @@ h3 {
     line-height: 0%;
 }
 
+.fa-stack:hover {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2rem;
+    height: 2rem;
+    position: absolute;
+    right: 1rem;
+    background: -webkit-linear-gradient(#FF79DA, #9356DC);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
 /*--Bas de page--*/
 footer {
     background-color: rgb(61, 59, 59);
@@ -274,10 +288,6 @@ footer {
     Text-decoration: none;
     color: white;
     line-height: 20px;
-}
-
-.fa-utensils {
-    margin-right: 4%;
 }
 
 .fa-handshake {
