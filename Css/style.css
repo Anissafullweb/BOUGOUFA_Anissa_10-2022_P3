@@ -249,19 +249,41 @@ h3 {
     line-height: 0%;
 }
 
-.fa-stack:hover {
+
+.fa-solid {
+    opacity: 0%;
+}
+
+.fa-solid {
+
     display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 2rem;
-    height: 2rem;
-    position: absolute;
-    right: 1rem;
     background: -webkit-linear-gradient(#FF79DA, #9356DC);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    animation-name: color;
+    animation-duration: 5s;
+    animation-iteration-count: 2;
+}
+
+@keyframes color {
+    0% {
+        opacity: 0;
+
+    }
+
+
+    50% {
+        opacity: 0.5;
+        -webkit-text-fill-color: #FF79DA
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-text-fill-color: #9356DC
+    }
 
 }
+
 
 /*--Bas de page--*/
 footer {
