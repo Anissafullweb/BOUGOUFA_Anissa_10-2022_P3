@@ -58,6 +58,42 @@ main {
     width: auto;
 }
 
+.Dekstop-Tablette {
+    animation-name: Apparition;
+    transition-property: all;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+    transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1);
+}
+
+@keyframes Apparition {
+    0% {
+        opacity: 0%;
+    }
+
+    20% {
+        opacity: 20%;
+    }
+
+    40% {
+        opacity: 40%;
+    }
+
+    60% {
+        opacity: 60%;
+    }
+
+    80% {
+        opacity: 80%;
+    }
+
+    100% {
+        opacity: 100%
+    }
+
+}
+}
+
 .Menu__Titre {
     padding-bottom: 0px;
     font-size: 10px;
@@ -73,7 +109,8 @@ main {
     border-radius: 25px;
     background-color: white;
     margin: 3%;
-    height: 60px;
+    /* height: 60px;*/
+    padding: 1%;
     width: 90%;
     box-shadow: #9356DC;
 }
@@ -84,38 +121,35 @@ main {
     padding: 0%;
     padding-left: 10px;
     height: 100%;
-    font-size: 10px;
-    width: 70%;
+    font-size: 6px;
     padding-right: 10px;
+    width: 90%;
 }
 
 .Menu__choix {
-    padding-top: 10px;
+    padding-top: 4%;
     padding-left: 10px;
     font-weight: bold;
-    font-size: 10px;
+    font-size: 13px;
     margin: 0%;
-    width: 80%;
 }
 
 p {
-    padding-top: 10px;
     padding-left: 10px;
-    font-size: 10px;
+    padding-bottom: 3%;
+    font-size: 12px;
     margin: 0%;
 }
 
 .Menu__prix {
     display: flex;
-    flex-direction: row;
+    align-items: flex-end;
     justify-content: flex-end;
-    align-items: center;
-    font-weight: bold;
-    font-size: large;
-    padding-right: 20px;
-    display: flex;
-    align-items: center;
-    font-size: 10px;
+    margin-left: .5rem;
+    width: auto;
+    height: auto;
+    font-weight: bolder;
+    padding-right: 4%;
 }
 
 .Animation {
@@ -125,7 +159,7 @@ p {
     align-items: center;
     margin-right: 0%;
     width: 30%;
-    height: auto;
+    height: 100%;
 }
 
 .fa-circle-check {
@@ -135,7 +169,7 @@ p {
     font-size: 1.5rem;
     color: #fff;
     background: #99e2d0;
-    height: auto;
+    height: 100%;
     border-radius: 0 20PX 20PX 0;
     padding: 12.8%;
     margin-top: 0%;
@@ -154,8 +188,10 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 1rem;
-    font-size: 1.125rem;
+    padding: 10px;
+    padding-left: 10%;
+    padding-right: 10%;
+    font-size: 15px;
     font-weight: 500;
     color: #fff;
     background: linear-gradient(#FF79DA, #9356DC);
@@ -165,11 +201,13 @@ section {
 }
 
 /*--Footer*/
+/*--Bas de page--*/
 footer {
     background-color: rgb(61, 59, 59);
     color: white;
     padding: 2%;
     margin-bottom: 0%;
+    padding-left: 8%;
 }
 
 .Footer__Title {
@@ -181,7 +219,7 @@ footer {
 .Footer__list {
     list-style-type: none;
     line-height: 18px;
-    font-size: 10px;
+    font-size: 16px;
     padding: 0;
 }
 
@@ -189,4 +227,12 @@ footer {
     Text-decoration: none;
     color: white;
     line-height: 20px;
+}
+
+.fa-handshake {
+    margin-right: 2%;
+}
+
+.fa-utensils {
+    margin-right: 4%;
 }
