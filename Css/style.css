@@ -242,48 +242,37 @@ h3 {
     padding-right: 2%;
 }
 
-.fa-heart {
-    display: flex;
-    align-items: flex-start;
-    height: 20px;
-    line-height: 0%;
+.fa-heart::before {
+    padding: 20px;
 }
 
-
-.fa-solid {
-    opacity: 0%;
+.fa-stack {
+    position: relative;
+    transition: all 500ms;
 }
 
-.fa-solid {
-
-    display: flex;
+.fa-stack .fa-solid {
+    position: absolute;
+    opacity: 0;
+    transition-duration: 0s;
     background: -webkit-linear-gradient(#FF79DA, #9356DC);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    animation-name: color;
-    animation-duration: 5s;
-    animation-iteration-count: 2;
-}
-
-@keyframes color {
-    0% {
-        opacity: 0;
-
-    }
-
-
-    50% {
-        opacity: 0.5;
-        -webkit-text-fill-color: #FF79DA
-    }
-
-    100% {
-        opacity: 1;
-        -webkit-text-fill-color: #9356DC
-    }
 
 }
 
+.fa-stack:hover {
+    transform: scale(1.2);
+    transition: all 500ms;
+}
+
+.fa-stack:hover .fa-solid {
+    opacity: 1;
+}
+
+.fa-stack:hover .fa-regular {
+    display: none;
+}
 
 /*--Bas de page--*/
 footer {
