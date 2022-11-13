@@ -10,12 +10,30 @@ body {
     flex-direction: column;
 }
 
+.header {
+    width: 90%;
+    height: 100px;
+}
+
 .header__arrow {
     display: flex;
     flex-direction: row;
     align-items: center;
-    font-weight: bold;
-    margin-left: 3%;
+    padding-left: 4%;
+    width: 80%;
+    margin: 0%;
+    font-family: "shrikhand";
+    font-size: 20px;
+    height: 50px;
+}
+
+.fa-arrow-left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 4%;
+    width: 10%;
+    padding-right: 25%;
 }
 
 .header__logo_ohmyfood {
@@ -64,6 +82,7 @@ main {
     animation-duration: 4s;
     animation-iteration-count: 1;
     transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1);
+    animation-direction: inherit;
 }
 
 @keyframes Apparition {
@@ -92,7 +111,6 @@ main {
     }
 
 }
-}
 
 .Menu__Titre {
     padding-bottom: 0px;
@@ -106,13 +124,14 @@ main {
 .Menu {
     display: flex;
     flex-direction: row;
+    justify-content: center;
     border-radius: 25px;
     background-color: white;
     margin: 3%;
-    /* height: 60px;*/
-    padding: 1%;
-    width: 90%;
+    width: 94%;
     box-shadow: #9356DC;
+    margin-top: 3%;
+    margin-bottom: 3%;
 }
 
 .Menu__Accompagnement-prix {
@@ -139,6 +158,7 @@ p {
     padding-bottom: 3%;
     font-size: 12px;
     margin: 0%;
+    width: 100%;
 }
 
 .Menu__prix {

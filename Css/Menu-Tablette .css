@@ -251,21 +251,9 @@
         padding-bottom: 1%;
     }
 
-    .Footer__Title {
-        display: flex;
-        justify-content: center;
-        font-family: 'Shrikhand', cursive;
-        font-size: 40px;
-        margin: 0%;
-    }
-
     .Footer__list {
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
-        width: auto;
-        font-family: 'Roboto', sans-serif;
-        font-size: 20px;
+        justify-content: space-between;
     }
 }
