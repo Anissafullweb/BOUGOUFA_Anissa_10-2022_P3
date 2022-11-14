@@ -5,7 +5,13 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-.Loader .fa-plate-utensils {
+.Loader {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+}
+
+.fa-plate-utensils {
     position: absolute;
     width: 100%;
     height: 100vh;
@@ -21,19 +27,24 @@ body {
 @keyframes progress-bar {
     0% {
         transform: rotate(0.3);
+        opacity: 0;
 
     }
 
     17% {
         transform: rotate(0.6);
+        opacity: 1;
     }
 
     24% {
         transform: rotate(0.8);
+        opacity: 1;
+
     }
 
     80% {
         transform: rotate(1);
+        opacity: 1;
     }
 
     100% {
