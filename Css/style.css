@@ -7,13 +7,14 @@ body {
 
 .Loader__container {
     position: fixed;
-    background-color: transparent;
+    background-color: whitesmoke;
     width: 100vw;
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    animation: loader 1 2s ease-out;
+    animation: loader 1 2s ease-out forwards;
+    z-index: 1;
 }
 
 .Loader {
@@ -21,6 +22,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+
 }
 
 .dot {
@@ -29,7 +31,9 @@ body {
     border-radius: 50%;
     background-color: #9356DC;
     margin: 0 30px;
-    animation: loader 1 2s ease-out;
+    animation: dot 2s ease-out forwards;
+
+
 }
 
 .d1 {
@@ -44,28 +48,43 @@ body {
     animation-delay: 1.15s;
 }
 
-@keyframes loader {
+@keyframes dot {
     0% {
-        background-color: whitesmoke;
-        opacity: 1;
         transform: translateY(0px);
     }
 
     50% {
-        background-color: whitesmoke;
         transform: translateY(-30px);
+    }
+
+    75% {
+        transform: translateY(0PX);
+    }
+}
+
+@keyframes loader {
+
+    50% {
+
+
         opacity: 1;
     }
 
     75% {
-        background-color: whitesmoke;
-        transform: translateY(0PX);
+
+
         opacity: 0.5;
+
+    }
+
+    95% {
+        z-index: 1;
     }
 
     100% {
-        background-color: transparent;
+
         opacity: 0;
+        z-index: -1;
     }
 }
 
