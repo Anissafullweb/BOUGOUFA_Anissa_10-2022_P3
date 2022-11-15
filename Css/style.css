@@ -5,17 +5,22 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-
-.Loader {
-    position: absolute;
-    background-color: white;
-    width: 100%;
+.Loader__container {
+    position: fixed;
+    background-color: transparent;
+    width: 100vw;
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: opacity infinite 1.5 ease-out;
-    z-index: 2;
+    animation: loader 1 2s ease-out;
+}
+
+.Loader {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .dot {
@@ -25,19 +30,6 @@ body {
     background-color: #9356DC;
     margin: 0 30px;
     animation: loader 1 2s ease-out;
-}
-
-@keyframes opacity {
-    to {
-        background-color: #000;
-        opacity: 1;
-    }
-
-    from {
-        z-index: -1;
-        background-color: transparent;
-        opacity: 0;
-    }
 }
 
 .d1 {
@@ -54,25 +46,24 @@ body {
 
 @keyframes loader {
     0% {
-        background-color: #000;
+        background-color: whitesmoke;
         opacity: 1;
         transform: translateY(0px);
     }
 
     50% {
-        background-color: #000;
+        background-color: whitesmoke;
         transform: translateY(-30px);
         opacity: 1;
     }
 
     75% {
-        background-color: transparent;
+        background-color: whitesmoke;
         transform: translateY(0PX);
         opacity: 0.5;
     }
 
     100% {
-        /* z-index: -1;*/
         background-color: transparent;
         opacity: 0;
     }
