@@ -75,6 +75,38 @@ a {
     padding-right: 8%;
 }
 
+.fa-heart::before {
+    padding: 10px;
+}
+
+.fa-stack {
+    position: relative;
+    transition: all 500ms;
+}
+
+.fa-stack .fa-solid {
+    position: absolute;
+    opacity: 0;
+    transition-duration: 0s;
+    background: -webkit-linear-gradient(#FF79DA, #9356DC);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+.fa-stack:hover {
+    transform: scale(1.2);
+    transition: all 500ms;
+}
+
+.fa-stack:hover .fa-solid {
+    opacity: 1;
+}
+
+.fa-stack:hover .fa-regular {
+    display: none;
+}
+
 main {
     border-radius: 20px 20px 0px 0px;
     background-color: rgb(244, 242, 242);
