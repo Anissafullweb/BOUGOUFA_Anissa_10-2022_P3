@@ -119,12 +119,44 @@ main {
 
 .Dekstop-Tablette {
     animation-name: Apparition;
+    animation-direction: normal;
     transition-property: all;
-    animation-duration: 4s;
+    animation-duration: 3s;
     animation-iteration-count: 1;
     transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1);
-    animation-direction: inherit;
+
 }
+
+.Entrée,
+.Plats,
+.Dessert {
+    animation: Fondu 2s ease-out forwards;
+}
+
+.Entrée {
+    animation-delay: 0.5;
+}
+
+.Plats {
+    animation-delay: 1s;
+}
+
+.Dessert {
+    animation-delay: 2s;
+}
+
+@keyframes Fondu {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+
+}
+
+
 
 @keyframes Apparition {
     0% {
