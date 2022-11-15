@@ -168,8 +168,13 @@
 
     .Restaurant__card--image {
         width: auto;
+        top: 5px;
+
     }
 
+    .Restaurant__card--image-new {
+        margin-top: 10px;
+    }
 
     .Menu__Titre {
         font-size: 30PX;

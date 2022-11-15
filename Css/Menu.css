@@ -4,6 +4,10 @@
     font-size: 20px;
 }
 
+a {
+    text-decoration: none;
+}
+
 body {
     display: flex;
     justify-content: center;
@@ -34,6 +38,11 @@ body {
     padding-top: 4%;
     width: 10%;
     padding-right: 25%;
+
+}
+
+a {
+    margin-right: 30%;
 }
 
 .header__logo_ohmyfood {

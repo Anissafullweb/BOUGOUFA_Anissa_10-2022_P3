@@ -202,8 +202,14 @@
         width: 200px;
     }
 
-    .Restaurant__card--image {
+    .Restaurant__card--image-new {
         width: auto;
+        margin-top: 10px;
+        position: relative;
+    }
+
+    .Restaurant__card--image-new {
+        margin-top: 10px;
     }
 
     .Menu {
