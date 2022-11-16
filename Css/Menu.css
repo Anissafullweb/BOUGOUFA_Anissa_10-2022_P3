@@ -120,7 +120,7 @@ main {
 .Dekstop-Tablette {
     animation-name: Apparition;
     animation-direction: normal;
-    transition-property: all;
+    /*  transition-property: all;*/
     animation-duration: 3s;
     animation-iteration-count: 1;
     transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1);
@@ -130,7 +130,7 @@ main {
 .Entrée,
 .Plats,
 .Dessert {
-    animation: Fondu 2s ease-out forwards;
+    animation: Fondu 2s ease-out backwards;
 }
 
 .Entrée {
