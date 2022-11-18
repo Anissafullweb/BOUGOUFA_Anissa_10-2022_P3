@@ -17,6 +17,7 @@
     .Dekstop-Tablette {
         display: flex;
         flex-direction: row;
+        justify-content: center;
     }
 
     .Menu {
