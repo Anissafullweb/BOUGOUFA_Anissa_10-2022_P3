@@ -258,19 +258,22 @@ p {
     padding-right: 4%;
 }
 
-.Menu__prix:hover {}
 
 .Animation {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
     margin-right: 0%;
-    width: 4rem;
+    width: 6rem;
+}
+
+.fa-circle-check:hover {
+    transform: rotate(-90deg);
 
 }
 
 .fa-circle-check {
-
+    display: flex;
     justify-content: center;
     align-items: center;
     font-size: 1.5rem;
@@ -280,6 +283,9 @@ p {
     border-radius: 0 20PX 20PX 0;
     padding: 12.8%;
     margin-top: 0%;
+    height: 36px;
+    padding-right: 20%;
+
 }
 
 /*--Commander--*/
