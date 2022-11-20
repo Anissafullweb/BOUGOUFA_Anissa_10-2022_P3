@@ -78,7 +78,6 @@ a {
     height: 4px;
     width: 26px;
     margin-left: 15px;
-    padding-top: -16px;
 }
 
 .fa-heart {
@@ -144,7 +143,7 @@ main {
 }
 
 .Entrée {
-    animation-delay: 0.5;
+    animation-delay: 0.5s;
 }
 
 .Plats {
@@ -214,7 +213,7 @@ main {
     margin: 3%;
     width: 94%;
     box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, .2);
-
+    overflow: hidden;
 }
 
 
@@ -259,16 +258,34 @@ p {
 }
 
 
+
 .Animation {
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: center;
     margin-right: 0%;
-    width: 6rem;
+    background: #99e2d0;
+    height: 100%;
+    overflow: hidden;
+    padding: 5%;
+    opacity: 0;
+    width: 0%
 }
 
-.fa-circle-check:hover {
-    transform: rotate(-90deg);
+
+.Menu__prix:hover {
+    transform: translateX(-20px);
+    width: 10px;
+}
+
+
+.Animation:hover {
+    transform: rotate(360deg);
+    transition-duration: 01s;
+    transition-property: all;
+    transition-timing-function: ease-in-out;
+    opacity: 1;
+    width: auto;
 
 }
 
@@ -278,14 +295,6 @@ p {
     align-items: center;
     font-size: 1.5rem;
     color: #fff;
-    background: #99e2d0;
-    height: 100%;
-    border-radius: 0 20PX 20PX 0;
-    padding: 12.8%;
-    margin-top: 0%;
-    height: 36px;
-    padding-right: 20%;
-
 }
 
 /*--Commander--*/

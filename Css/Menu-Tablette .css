@@ -17,7 +17,7 @@
     }
 
     .header__logo_ohmyfood:hover {
-        transform: scale(120%);
+        transform: scale(1.2);
         background-color: rgb(84, 83, 83);
         transition-duration: 3s;
         transition-property: all;
@@ -57,7 +57,7 @@
     }
 
     p {
-        font-size: auto;
+
         padding: 0%;
         margin: 0%;
         font-weight: lighter;
@@ -118,7 +118,7 @@
         background-color: white;
         margin-top: 1%;
         font-size: 20px;
-        font-style: 'Roboto' sans-serif;
+
     }
 
     nav {
@@ -158,11 +158,12 @@
         justify-content: center;
         padding: 0%;
         margin: 0%;
-        animation-name: apparition 2s;
+        animation-name: fondu;
+        animation-duration: 2s;
 
     }
 
-    @keyframes apparition {
+    @keyframes fondu {
         10% {
             opacity: 0%;
         }
@@ -181,7 +182,7 @@
     }
 
     .menu {
-        box-shadow: #9356DC;
+
         display: flex;
         flex-direction: row;
         border-radius: 25px;
