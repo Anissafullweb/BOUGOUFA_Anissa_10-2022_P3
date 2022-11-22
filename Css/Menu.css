@@ -243,7 +243,6 @@ p {
     padding-bottom: 3%;
     font-size: 12px;
     margin: 0%;
-    width: 100%;
 }
 
 .Menu__prix {
@@ -263,9 +262,8 @@ p {
     width: 3rem;
     height: 3rem;
     background-color: #99e2d0;
-    transition: 0.5s;
-    /*opacity: 0;*/
-    /* width: 0%;*/
+    width: 0;
+
 }
 
 .fa-circle-check {
@@ -278,15 +276,23 @@ p {
     transition-property: all;
     transition-duration: 02s;
     transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+    animation: both;
+    margin: 0%;
 }
 
-.Menu__prix:hover .Animation {
-    opacity: 1;
-    width: auto;
+
+.Menu__prix:hover+.Animation {
+    margin: 0%;
+    width: 3rem;
+    /*transform: translateX(-50px);*/
+    transition-property: all;
+    transition-duration: 02s;
+    transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
 }
 
-.Menu__prix:hover .fa {
-    transform: translateX(-50px);
+.Menu__prix:hover+.fa-circle-check {
+    transform: rotate(180deg);
+    /* transform: translateX(-50px);*/
     transition-property: all;
     transition-duration: 02s;
     transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
