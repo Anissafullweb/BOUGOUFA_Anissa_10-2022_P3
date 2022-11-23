@@ -219,6 +219,7 @@ main {
 
 
 .Menu__Accompagnement-prix {
+    white-space: nowrap;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -227,7 +228,10 @@ main {
     height: 100%;
     font-size: 6px;
     padding-right: 10px;
-    width: 100%;
+    width: 80%;
+    transition-property: all;
+    transition-duration: 02s;
+    transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
 }
 
 .Menu__choix {
@@ -253,25 +257,49 @@ p {
     height: auto;
     font-weight: bolder;
     padding-right: 6%;
+
 }
 
 .Animation {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 3rem;
     height: 3rem;
     background-color: #99e2d0;
     width: 0;
+    transition-property: all;
+    transition-duration: 02s;
+    transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
 
 }
 
 .fa-circle-check {
     transform: rotate(-180deg);
     color: white;
+    transition-property: all;
+    transition-duration: 02s;
+    transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
 }
 
-.Menu__prix:hover {
+.Menu:hover .Menu__Accompagnement-prix {
+    width: 60%;
+    text-overflow: hidden;
+    transition-property: all;
+    transition-duration: 02s;
+    transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+
+
+}
+
+.Menu:hover .Menu__Accompagnement-prix p {
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+
+
+/*
+.Menu:hover .Menu__prix {
     transform: translateX(-50px);
     transition-property: all;
     transition-duration: 02s;
@@ -280,65 +308,20 @@ p {
     margin: 0%;
 }
 
-
-.Menu__prix:hover+.Animation {
+*/
+.Menu:hover .Animation {
     margin: 0%;
-    width: 3rem;
-    /*transform: translateX(-50px);*/
+    width: 20%;
+    transition-property: all;
+    transition-duration: 02s;
+
+}
+
+.Menu:hover .fa-circle-check {
+    transform: rotate(-360deg);
     transition-property: all;
     transition-duration: 02s;
     transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
-}
-
-.Menu__prix:hover+.fa-circle-check {
-    transform: rotate(180deg);
-    /* transform: translateX(-50px);*/
-    transition-property: all;
-    transition-duration: 02s;
-    transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
-}
-
-/*
-.Animation {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-right: 0%;
-    background: #99e2d0;
-    height: 100%;
-    overflow: hidden;
-    padding: 5%;
-    opacity: 0;
-    width: 0%;
-
-}
-
-
-.Menu__prix:hover {
-    transform: translateX(-20px);
-    width: 10px;
-}
-
-
-.Animation:hover {
-    transition-duration: 05s;
-    transition-property: all;
-    transition-timing-function: linear;
-    opacity: 1;
-    width: auto;
-    transform: translateX(100%);
-}
-
-.fa-circle-check {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.5rem;
-    color: #fff;
-}
-
-.fa-circle-check::before {
-    transform: rotate(180deg);
 }
 
 /*--Commander--*/
@@ -347,8 +330,6 @@ section {
     align-items: center;
     justify-content: center;
 }
-
-
 
 .Commander {
     display: flex;
